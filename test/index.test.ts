@@ -1,9 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { createCatalog } from "./catalog.ts";
-import { installExtension } from "./index.ts";
-import type { ExtensionHost } from "./index.ts";
-import type { Fetch, PluginConfig } from "./types.ts";
+import { createCatalog } from "../src/catalog.ts";
+import { installExtension } from "../src/index.ts";
+import type { ExtensionHost } from "../src/index.ts";
+import type { Fetch, PluginConfig } from "../src/types.ts";
 
 test("registers dynamic callbacks, preserves OMP key references and compaction, and refreshes only configured ids online", async () => {
   const registrations = new Map<string, Parameters<ExtensionHost["registerProvider"]>[1]>();

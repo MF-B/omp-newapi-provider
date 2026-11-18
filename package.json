@@ -6,10 +6,10 @@
   "license": "MIT",
   "engines": { "node": ">=22.18" },
   "keywords": ["pi-package", "omp", "newapi"],
-  "pi": { "extensions": ["./index.ts"] },
-  "files": ["*.ts", "!*.test.ts"],
+  "pi": { "extensions": ["./src/index.ts"] },
+  "files": ["src/"],
   "scripts": {
-    "test": "node --test *.test.ts",
+    "test": "node --test test/*.test.ts",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

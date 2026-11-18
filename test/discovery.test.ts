@@ -1,9 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { createCatalog } from "./catalog.ts";
-import { codexBaseUrl, configPath, gatewayRoot, normalizeBaseUrl, parseConfig } from "./config.ts";
-import { discover, normalizeDiscovery } from "./discovery.ts";
-import type { CatalogModel, Fetch, ServiceConfig } from "./types.ts";
+import { createCatalog } from "../src/catalog.ts";
+import { codexBaseUrl, configPath, gatewayRoot, normalizeBaseUrl, parseConfig } from "../src/config.ts";
+import { discover, normalizeDiscovery } from "../src/discovery.ts";
+import type { CatalogModel, Fetch, ServiceConfig } from "../src/types.ts";
 
 const service: ServiceConfig = { id: "gateway", adapter: "newapi", baseUrl: "https://gateway.example/proxy/v1" };
 const bundled: CatalogModel[] = [
