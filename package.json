@@ -1,0 +1,19 @@
+{
+  "name": "omp-newapi-provider",
+  "version": "0.1.0",
+  "description": "Dynamic NewAPI and Codex gateway providers for oh-my-pi",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22.18" },
+  "keywords": ["pi-package", "omp", "newapi"],
+  "pi": { "extensions": ["./index.ts"] },
+  "files": ["*.ts", "!*.test.ts"],
+  "scripts": {
+    "test": "node --test *.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.3"
+  }
+}
